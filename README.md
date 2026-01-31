@@ -24,7 +24,7 @@ Server runs on `http://localhost:3000`
 1. Open `about:debugging`
 2. Click "This Firefox"
 3. Click "Load Temporary Add-on"
-4. Select `extension/manifest.json`
+4. Select `extension_mozilla/manifest.json`
 
 #### Edge
 1. Open `edge://extensions`
