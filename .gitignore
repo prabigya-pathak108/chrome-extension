@@ -1,0 +1,15 @@
+# Ignore the dependencies folder (The server installs this automatically)
+node_modules/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+npm-debug.log
+
+# Ignore environment variables (Safety for passwords/API keys)
+.env
+
+# If you are saving data to a file, ignore the data so it doesn't get overwritten
+collected_data.json
