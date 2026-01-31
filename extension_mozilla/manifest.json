@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Distributed FB Scraper",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "alarms",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://localhost:3000/*",
+    "https://chrome-extension-v97t.onrender.com/*",
+    "https://*.facebook.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.facebook.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
