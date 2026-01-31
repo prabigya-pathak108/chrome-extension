@@ -39,7 +39,8 @@ app.post('/submit-data', (req, res) => {
     res.json({ status: "success" });
 });
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
 app.get('/', (req, res) => {
     res.send('<h1>Server is Running!</h1><p>The scraping bot is active.</p>');
 });
